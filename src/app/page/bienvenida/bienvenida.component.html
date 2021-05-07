@@ -1,0 +1,36 @@
+<app-nabvar></app-nabvar>
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h3 class="text-center">Api GitHub</h3>
+  
+      <!-- <div class="table-scroll table-responsive" *ngIf="this.movieList"> -->
+        <table class="table table-dark table-hover text-center">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Url</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>{{ usuarioGit.id }}</td>
+              <td>{{ usuarioGit.name }}</td>
+              <td>{{ usuarioGit.url }}</td>
+              <td>
+                <img
+                  [src]="usuarioGit.avatar_url"
+                  alt="Movie Image"
+                  width="50"
+                  height="50"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- </div> -->
+    </div>
+
+  </div>
